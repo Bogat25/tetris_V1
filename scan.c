@@ -6,16 +6,15 @@
 int sc_input()
 {
     int input = -1;
-    while (input < 0 || input > 2)
+    while (input < 0 || input > 1)
     {
         printf(YELLOW_TEXT "Kerlek valassz a lehetosegek kozul.\n");
         printf(RED_TEXT "Kilepes: 0 ");
-        printf(CYAN_TEXT "Tablak kiirasa: 1 ");
-        printf(GREEN_TEXT "Jatek elkezdese: 2\n");
+        printf(GREEN_TEXT "Jatek elkezdese: 1\n");
         printf(RESET_TEXT);
         while (scanf("%d", &input) != 1)
         {
-            printf(RED_TEXT "Hibas bemenet.");
+            printf(RED_TEXT "Hibas bemenet.\n");
             printf(RESET_TEXT);
             while (getchar() != '\n')
                 ;

@@ -9,27 +9,21 @@
 #include "print.c"
 #include "scan.c"
 
-
 int main()
 {
     int tabla[TABLA_MERET_X][TABLA_MERET_Y] = {0};
     int Jatekban = 1;
- 
+
     while (Jatekban == 1)
     {
-    int input = sc_input();
-    if (input == 0)
-    {
-        pr_kilepes();
-        return 0;
+        int input = sc_input();
+        if (input == 0)
+        {
+            pr_kilepes();
+            return 0;
+        }
+        pr_bevezeto();
+        
+        pr_tabla(tabla);
     }
-    
-
-    }
-    
-
-
-    pr_tabla(tabla);
-    
-
 }
