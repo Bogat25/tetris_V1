@@ -8,5 +8,6 @@
 #define WHITE_TEXT "\033[37m"
 #define RESET_TEXT "\033[0m"
 
-#define TABLA_MERET_X 12
+#define TABLA_MERET_X 15
 #define TABLA_MERET_Y 8
+#define SPAWN_MERET 5 
